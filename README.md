@@ -46,8 +46,6 @@ To see our animations and beautiful UI in action, check out the live demo below:
     }
 </style>
 ```
-## Our Services
-```html
 ## Our Services with Animations
 
 <div class="service" id="software-development">
@@ -106,7 +104,6 @@ To see our animations and beautiful UI in action, check out the live demo below:
         margin-top: 0;
     }
 </style>
-```
 
 ### Software Development
 We create custom software solutions tailored to your business needs.

@@ -18,11 +18,11 @@ At TNIDU Inc., we believe that a beautiful user interface and smooth animations 
 
 Let us help you create a beautiful and engaging user interface that will captivate your audience and set your product apart from the competition.
 
-```html
 ## Live Demo
 
 To see our animations and beautiful UI in action, check out the live demo below:
 
+```html
 <div id="animation-demo">
     <img src="./demo-image.png" alt="Demo Image" class="animated-image">
 </div>
@@ -46,6 +46,7 @@ To see our animations and beautiful UI in action, check out the live demo below:
     }
 </style>
 ```
+
 ## Our Services with Animations
 
 <div class="service" id="software-development">
@@ -99,7 +100,15 @@ To see our animations and beautiful UI in action, check out the live demo below:
         border-radius: 8px;
         background-color: #f9f9f9;
     }
+    .service p {
+        margin: 10px 0;
+    }
 
+    .service:hover {
+        background-color: #e0f7fa;
+        transform: scale(1.02);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
     .service h3 {
         margin-top: 0;
     }
@@ -118,6 +127,5 @@ We provide creative graphic design services to make your brand visually appealin
 Our marketing strategies will help you reach a wider audience and grow your business.
 
 ### Game Development
-We develop engaging and immersive games for various platforms.
+We develop engaging and immersive games for various platforms. TNIDU Inc.
 
-<!-- Include the HTML code for reference -->

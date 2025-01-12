@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNIDU Inc.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Source Code Pro', monospace;
+            color: white;
+            font-size: 5rem;
+            margin-top: 1rem;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .service {
+            background-color: #111;
+            padding: 2rem;
+            border: 1px solid #333;
+            border-radius: 5px;
+            flex: 1 1 calc(33.333% - 4rem);
+            max-width: 300px;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+        }
+
+        .service h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        section {
+            margin: 4rem 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .introduction {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .introduction img {
+            width: 10rem;
+            height: auto;
+            filter: brightness(0) invert(1);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        .introduction p {
+            opacity: 0;
+            transform: translateY(20px);
+            text-align: left;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>TNIDU Inc.</h1>
+        </header>
+        <div class="container">
+        <section>
+            <h2>About TNIDU Inc.</h2>
+            <div class="introduction">
+            <img src="./logo.png" alt="TNIDU Inc.">
+            <p>TNIDU Inc. is a leading company specializing in software development, web development, graphic design, marketing, and game development. Our team of experts is dedicated to delivering high-quality solutions that meet the unique needs of our clients. We pride ourselves on our innovative approach and commitment to excellence.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <div class="services">
+            <div class="service">
+                <h3>Software Development</h3>
+                <p>We create custom software solutions tailored to your business needs.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Our team builds responsive and modern websites to help you stand out online.</p>
+            </div>
+            <div class="service">
+                <h3>Graphic Design</h3>
+                <p>We provide creative graphic design services to make your brand visually appealing.</p>
+            </div>
+            <div class="service">
+                <h3>Marketing</h3>
+                <p>Our marketing strategies will help you reach a wider audience and grow your business.</p>
+            </div>
+            <div class="service">
+                <h3>Game Development</h3>
+                <p>We develop engaging and immersive games for various platforms.</p>
+            </div>
+            </div>
+        </section>
+        </div>
+        <script>
+        gsap.to(".service", {
+            duration: 1,
+            opacity: 1,
+            y: 0,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+
+        gsap.to(".introduction img", {
+            duration: 1,
+            opacity: 1,
+            scale: 1,
+            ease: "power2.out",
+            delay: 0.5
+        });
+
+        gsap.to(".introduction p", {
+            duration: 1,
+            opacity: 1,
+            y: 0,
+            ease: "power2.out",
+            delay: 1
+        });
+        </script>
+    </body>
+    </html>
